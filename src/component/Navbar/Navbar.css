@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.navbar {
+  height: 70px;
+  background: #262626;
+}
+
+.navbar__brand {
+  line-height: 70px;
+  text-transform: capitalize;
+  font-size: 1.4em;
+}
+
+.navbar__brand a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar__brand a span {
+  font-weight: lighter;
+}
+
+.navbar__brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__search .searchTerm {
+  width: 20rem;
+  border: 1px solid white;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.navbar__search .searchButton {
+  height: 3.3rem;
+  border: 1px solid white;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__nav ul li {
+  position: relative;
+}
+
+.navbar__nav ul li a,
+.navbar__nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #262626;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar__nav ul li a:hover,
+.navbar__nav ul li a:visited:hover {
+  background: #2581dc;
+  color: #ffffff;
+}
+
+.navbar__nav ul li a:not(:only-child):after,
+.navbar__nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+
+.navbar__nav ul li ul li {
+  min-width: 190px;
+}
+
+.navbar__nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+/*# sourceMappingURL=Navbar.css.map */
